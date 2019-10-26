@@ -1,0 +1,117 @@
+/*nav{
+    transition: 1s;
+    opacity: 0;
+    transform: translateX(100px);
+    visibility: hidden;
+}
+header.scrolled nav{
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+nav{
+    position: relative;
+    float: left;
+}*/
+.menu-icono{
+    position: fixed;
+    top: 20px;
+    right: 10%;
+    width: 50px;
+    height: 40px;
+    padding: 4px 8px;
+    background-color: white /*rgb(26, 26, 26)*/;
+    box-sizing: border-box;
+    cursor: pointer; 
+    z-index: 4;
+}
+.menu-icono .barras{
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: rgb(35, 170, 141);
+    margin: 6px 0;
+    transition: .5s;
+}
+.menu-principal{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff /*rgb(26, 26, 26)*/;
+    transition: .5s;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 4;
+}
+.menu-principal.active{
+    left: 0;
+}
+.menu-principal .menu-a{
+    margin: 0;
+    padding: 40px 0;
+}
+.menu-principal .menu-a li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-principal .menu-a li a{
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color:  rgb(35, 170, 141)/*rgb(43, 114, 221) white*/;
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu-principal .menu-a li a:hover{
+    background-color:rgb(43, 114, 221);
+    color: white;
+
+}
+.menu-icono.active .barras{
+    position: absolute;
+    width: calc(100% - 16px);
+    top: calc(50% - 8px);
+}
+.menu-icono.active .barras:nth-child(1){
+    transform: rotate(45deg);
+}
+.menu-icono.active .barras:nth-child(3){
+    transform: rotate(-45deg);
+}
+.menu-icono.active .barras:nth-child(2){
+    display: none;
+}
+.menu-social{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.menu-social li{
+    width: 25%;
+    text-align: center;
+    list-style: none;
+}
+.menu-social li a{
+    display: block;
+    font-size: 25px;
+    color: rgb(35, 170, 141);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.menu-social li a:hover{
+    background-color: rgb(43, 114, 221)/*rgb(119, 13, 13)*/;
+    color: white;
+}

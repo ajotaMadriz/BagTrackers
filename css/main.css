@@ -1,0 +1,509 @@
+@import url(fontello.css);
+@import url(menu.css);
+@import url(contacto.css);
+@import url(aos.css);
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    /*min-height: 1000px;
+    padding-top: 150px;*/
+    font-family: sans-serif;
+    background: linear-gradient(45deg, rgb(35, 170, 141), rgb(43, 114, 221));
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(35, 170, 141), rgb(43, 114, 221));
+    transition: 1s;
+    padding: 0 10%;
+    box-sizing: border-box;
+    z-index: 3;
+}
+header.scrolled{
+    height: 85px;
+}
+/*----------------------inicio de animacion del banner------------------------------*/
+header .cielo{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgb(92, 157, 255),rgb(148, 191, 255) );
+
+}
+header .cielo.scrolled{
+    display: none
+}
+.avion{
+    position: absolute;
+}
+.avion1{
+    transform: rotate(45deg);
+    top: 25%;
+    left: 0%;
+    height: 85px;
+    animation: animate1 18s linear infinite;
+    opacity: .8;
+}
+.avion4{
+    top: 50%;
+    height: 325px;
+    animation: animate 10s linear infinite;
+    z-index: 1;
+}
+.avion3{
+    bottom: 0%;
+    left: 25%;
+    height: 150px;
+    animation: animate2 25s linear infinite;
+    opacity: .8;
+}
+.avion2{
+    bottom: 0%;
+    right: 40%;
+    height: 100px;
+    animation: animate3 35s linear infinite;
+    opacity: .5;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(50px);
+        left: -25%;
+    }
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+    75%{
+        transform: translateY(-250px);
+    }
+    100%{
+        transform: translateY(-350px);
+        left: 150%;
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(0px);
+        bottom: -25%;
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+        bottom: 150%;
+    }
+}
+@keyframes animate3{
+    0%{
+        transform: translateY(0px);
+        bottom: -25%;
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+        bottom: 150%;
+    }
+}
+
+@keyframes animate1{
+    0%{
+        left: -25%;
+    }
+    100%{
+        left: 150%;
+    }
+}
+.nube1{
+    top: 25%;
+    right: 0%;
+    height: 400px;
+    animation: animate11 32s linear infinite;
+}
+.nube2{
+    top: 70%;
+    right: 0%;
+    height: 550px;
+    animation: animate11 28s linear infinite;
+}
+.nube3{
+    top: 30%;
+    right: 0%;
+    height: 400px;
+    animation: animate11 32s linear infinite;
+}
+.nube4{
+    top: 45%;
+    right: 0%;
+    height: 300px;
+    animation: animate11 38s linear infinite;
+}
+.nube5{
+    top: 40%;
+    /*right: 25%;*/
+    right: 0%;
+    height: 350px;
+    animation: animate12 30s linear infinite;
+}
+.nube6{
+    top: 27%;
+    right: 0%;
+    height: 420px;
+    animation: animate12 35s linear infinite;
+}
+.nube7{
+    top: 8%;
+    right: 0%;
+    height: 500px;
+    animation: animate12 25s linear infinite;
+}
+.nube8{
+    top: 32%;
+    /*right: 10%;*/
+    right: 0%;
+    height: 300px;
+    animation: animate11 32s linear infinite;
+}
+.nube9{
+    top: 35%;
+    right: 0%;
+    height: 285px;
+    animation: animate11 40s linear infinite;
+}
+.nube10{
+    top: 40%;
+    right: 0%;
+    height: 400px;
+    animation: animate13 32s linear infinite;
+}
+.nube11{
+    top: 5%;
+    right: 0%;
+    height: 355px;
+    animation: animate13 35s linear infinite;
+}
+.nube12{
+    top: 15%;
+    /*right: 18%;*/
+    right: 0%;
+    height: 485px;
+    animation: animate13 28s linear infinite;
+}
+.nube13{
+    top: 35%;
+    right: 0%;
+    height: 285px;
+    animation: animate13 40s linear infinite;
+}
+@keyframes animate11{
+    0%{
+        right: 0%;
+    }
+    25%{
+    }
+    100%{
+        right: 100%;
+    }
+}
+@keyframes animate12{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+@keyframes animate13{
+    0%{
+        right: 0%;
+    }
+    25%{
+    }
+    100%{
+        right: 100%;
+    }
+}
+/*----------------------fin de animacion del banner------------------------------*/
+header .logo img{
+    width: 300px;
+    transition: .5s;
+}
+header .logo{
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    transition: .5s;
+}
+header.scrolled .logo{
+    position: relative;
+    top: 10px;
+    left: 0;
+    transition: .5s;
+}
+header.scrolled .logo img{
+    width: 80px;
+}
+header img.banner{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+header.scrolled img.banner{
+    opacity: 0;
+}
+header .logo img{
+    width: 300px;
+    transition: .5s;
+}
+.seccion1{
+    background-image: url(../img/arcovia-19-05-equipaje-aeromexico.jpg);
+    min-height: 300px;
+}
+.seccion1{
+    position: relative;
+    /*opacity: 0.70;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    clear: both;
+}
+.fonto-color{
+    background: linear-gradient(45deg, rgb(43, 114, 221), rgb(35, 170, 141));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: 0;
+    left: 0;
+    opacity: 0.70;
+}
+.title-seccion{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: darkgray;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.title-seccion .title-border{
+    background-color: rgba(43, 43, 43, 0.637);
+    color: white;
+    padding: 20px;
+}
+
+section, .seccion{
+    background: #fff;
+    width: 100%;
+    padding: 100px 10%;
+    box-sizing: border-box;
+    clear: both;
+}
+section h2{
+    font-size: 48px;
+    text-align: center;
+}
+section p{
+    font-size: 18px;
+    text-align: center;
+}
+.contenedor-whitepaper{
+    background: linear-gradient(55deg, rgb(35, 170, 141), rgb(43, 114, 221));
+}
+.contenedor-whitepaper div p{
+    color: #fff
+}
+.pri-container-team{
+    background-color: #303030;
+    width: 100%;
+    padding: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    clear: both;
+}
+.container-team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.container-team .card-team{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    background: #444;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.container-team .card-team .layer-team{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgb(35, 170, 141), rgb(43, 114, 221));
+    z-index: 1;
+    transition: 0.5s;
+}
+.container-team .card-team:hover .layer-team{
+    top: 0;
+}
+.container-team .card-team .content-team{
+    position: relative;
+    z-index: 2;
+}
+.container-team .card-team .content-team p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.container-team .card-team .content-team .img-team{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 15px; 
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.container-team .card-team .content-team .details-team h2{
+    font-size: 18px;
+    color: rgb(43, 114, 221);
+    transition: 0.5s;
+}
+.container-team .card-team .content-team .details-team h2 span{
+    color: rgb(35, 170, 141);
+    font-size: 14px;
+    transition: 0.5s;
+}
+.container-team .card-team:hover .content-team .details-team h2{
+    color: #fff;
+}
+.container-team .card-team:hover .content-team .details-team h2 span{
+    color: #fff;
+}
+.container-team .card-team .content-team .contact-social{
+    margin: 0;
+    padding: 0;
+    bottom: 40px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.container-team .card-team .content-team .contact-social li{
+    width: 25%;
+    text-align: center;
+    list-style: none;
+}
+.container-team .card-team .content-team .contact-social li a{
+    display: block;
+    font-size: 25px;
+    color: rgb(35, 170, 141);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.container-team .card-team:hover .content-team .contact-social li a{
+    color: white;
+}
+.container-team .card-team .content-team .contact-social li a:hover{
+    background-color: rgb(35, 170, 141)/*rgb(119, 13, 13)*/;
+    color: rgb(43, 114, 221);
+}
+.pri-container-roadmap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+}
+.pri-container-roadmap .contenido-roadmap{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+.boton-top{
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: rgb(35, 170, 141);
+    color: #fff;
+    transition: .5s;
+}
+.boton-top:hover{
+    background: rgb(43, 114, 221);
+    color: #fff;
+    transition: .5s;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(55deg, rgb(35, 170, 141), rgb(43, 114, 221));
+    clear: both;
+}
+.footer p{
+    text-align: center;
+    color: #fff;
+    padding-top: 40px; 
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#loader{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     margin: 0;
+     z-index: 10;
+     overflow: visible;
+     background: #000 url('../img/loader.gif') no-repeat center center;
+     clear: both;
+}
